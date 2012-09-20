@@ -18,7 +18,7 @@ import json
 # Setup access credentials 
 username  = "MP-00213/testing"
 password  = "b21efa4cdacfd551e93e4b76ee7c3667"
-url     = "http://order-api.sym/orders/order"
+url     = "https://orders.marvelpress.com/orders/order"
 
 # Set image path
 imagepath   = "/path/to/print/ready/image"
