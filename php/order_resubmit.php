@@ -6,7 +6,7 @@
  * @copyright Marvelpress Ltd. 2012
  */
 
-$url            = "https://orders.marvelpress.com/orders/order/resubmit/";
+$url            = "https://orders.marvelpress.com/orders/resubmit/";
 $APIUsername    = "MP-00213/testing";                   
 $APIPassword    = "b21efa4cdacfd551e93e4b76ee7c3667";
 
