@@ -16,12 +16,12 @@ import base64
 import json
 
 # Setup access credentials 
-username  = "MP-00213/test"
-password  = "2608ca6a44ad797c7fc65a42fb1cddd8"
+username  = "MP-00213/testing"
+password  = "b21efa4cdacfd551e93e4b76ee7c3667"
 url     = "http://order-api.sym/orders/order"
 
 # Set image path
-imagepath   = "/home/oliversmith/Dropbox/Order API Test/nigel 4.jpg"
+imagepath   = "/path/to/print/ready/image"
 
 # Prepare the order as an array
 order = { 
