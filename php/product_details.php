@@ -1,21 +1,22 @@
 <?php
 /**
- * Example of retrieving a product list from the Marvelpress Order API
+ * Example of retrieving a single product's details from the Marvelpress Order API
  *
- * @author Lewis Pollard 
+ * @author Lewis Pollard
  * @copyright Marvelpress Ltd. 2012
  */
 
-$url            = "https://orders.marvelpress.com/products/";
+$url            = "https://orders.marvelpress.com/products/product";
 $APIUsername    = "MP-00213/testing";                   
 $APIPassword    = "b21efa4cdacfd551e93e4b76ee7c3667";
+$productCode	= "MPP-WINEBOX";
 
 //Initialise cURL
 $ch = curl_init();
 
 //Set the url and AUTH. cURL uses GET by default
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch,CURLOPT_URL,$url);
+curl_setopt($ch,CURLOPT_URL,$url.$productCode);
 curl_setopt($ch, CURLOPT_USERPWD, $APIUsername.':'.$APIPassword);
 
 //Execute post and decode response
@@ -34,6 +35,6 @@ if($http_status == 200)
 }
 else
 {
-    echo "Sending Order Failed \n";
+    echo "Retrieving Product Failed \n";
     echo $result->Message."\n";
 }
