@@ -8,13 +8,13 @@
 
 $imagepath      = "/path/to/print/ready/image";
 $url            = "https://orders.marvelpress.com/orders/order";
-$APIUsername    = "MP-00213/testing";                   
-$APIPassword    = "b21efa4cdacfd551e93e4b76ee7c3667";
+$APIUsername    = "MP-00200/testing";                   
+$APIPassword    = "bfgjksdbnfkjlsa78345sdbfglks7";
 
 //Prepare the order as an array
 $order = array( 
-  'account_code' => "MP-00213",             //Your account code
-  "item_count" => 1,                        //The number of item lines (used to verify all items are received correctly)
+  "account_code" => "MP-00213",             //Your account code
+  "reference" => "A customer order number /reference",       //A reference or order number to aid order tracking
   "image_location" => 'file',               //The method used to send the images - file / url, only file is supported
    "items" => array(                        //Array of order items
          array(
