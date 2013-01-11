@@ -16,6 +16,7 @@ $order = array(
   "account_code" => "MP-00213",             //Your account code
   "reference" => "A customer order number /reference",       //A reference or order number to aid order tracking
   "image_location" => 'file',               //The method used to send the images - file / url, only file is supported
+  "item_count" => '1',
    "items" => array(                        //Array of order items
          array(
           "product_code"    => "AA01001P",          //The product code of the item (from the price list)
